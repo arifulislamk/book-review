@@ -26,7 +26,7 @@ const Header = () => {
                     {links}
                 </ul>
             </div>
-            <div className="navbar-end">
+            <div className="navbar-end hidden md:flex">
                 <a className="btn bg-[#23BE0A] text-[18px] text-white font-semibold mr-4 ">Sign In</a>
                 <a className="btn bg-[#59C6D2] text-[18px] text-white font-semibold ">Sign Up</a>
             </div>

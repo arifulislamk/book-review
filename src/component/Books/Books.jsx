@@ -10,7 +10,7 @@ const Books = () => {
     }, [])
     return (
         <div>
-            <h2 className="mb-10 text-[40px] text-[#131313] font-bold text-center">Books : {booksCard.length}</h2>
+            <h2 className="mt-10 md:mt-24 mb-10 text-[40px] text-[#131313] font-bold text-center">Books</h2>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                 {
                     booksCard.map( book => <BookCard key={book.id} book={book}></BookCard>)
