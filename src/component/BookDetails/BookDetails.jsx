@@ -1,6 +1,6 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import { saveBookItem } from "../../Utility/localStorage";
-import { saveBookItem2 } from "../../Utility/localStorage2";
+import { getStoredBooks, saveBookItem } from "../../Utility/localStorage";
+import { getStoredBook2, saveBookItem2 } from "../../Utility/localStorage2";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -12,16 +12,38 @@ const BookDetails = () => {
     // console.log(books, id);
 
     const book = books.find(book => book.bookId == intId);
-    const { bookId, bookName, author, image, review,
+    const {  bookName, author, image, review,
         totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
 
     const handleReadtostify = () => {
-        saveBookItem(intId)
-        toast('read Submit')
+        const readId = getStoredBooks();
+        const findread = readId.find(read => read == intId)
+        if (findread) {
+            toast('Already Readed')
+        }
+        else {
+            saveBookItem(intId)
+            toast('Books Readed Done!')
+        }
+
     }
+
     const handleWishListtostify = () => {
-        saveBookItem2(intId)
-        toast('Wishlist Submit')
+        const wishid = getStoredBook2();
+        const readid = getStoredBooks();
+        const findwish = wishid.find(wish => wish == intId)
+        const findread = readid.find(read => read == intId)
+        if (findwish) {
+            toast('Already exist Wishlist')
+        }
+        else if (findread) {
+            toast('Readed Book. Not Added WishList')
+        }
+        else {
+            saveBookItem2(intId)
+            toast('Added to WishList')
+        }
+
     }
 
 
@@ -55,9 +77,9 @@ const BookDetails = () => {
                         <button
                             onClick={handleReadtostify}
                             className="px-6 btn border border-gray-500 text-[#131313] mr-2">Read</button>
-                        <button 
-                        onClick={handleWishListtostify}
-                        className="btn border text-white bg-[#50B1C9]">Wishlist</button>
+                        <button
+                            onClick={handleWishListtostify}
+                            className="btn border text-white bg-[#50B1C9]">Wishlist</button>
                     </div>
                 </div>
             </div>
