@@ -3,14 +3,10 @@ import { GoPeople } from "react-icons/go";
 import { GrDocumentText } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
-const ReadBook = ({ book }) => {
-
+const WishBook = ({ book }) => {
     const { bookId, bookName, author, image, review,
         totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
-
-
     return (
-
         <div className="p-6 mb-6 gap-2 grid grid-cols-4 border border-gray-400 rounded-lg font-work">
             <div className="flex justify-center bg-[#13131326] rounded-xl mr-5">
                 <img className=" px-12 py-8 " src={image} alt="" />
@@ -24,12 +20,12 @@ const ReadBook = ({ book }) => {
                 </div>
                 <div className="flex gap-2">
                     <p className="flex gap-2 items-center"> <GoPeople /> Publisher: {publisher}</p>
-                    <p className="flex gap-2 items-center"> <GrDocumentText/> Page {totalPages}</p>
+                    <p className="flex gap-2 items-center"> <GrDocumentText /> Page {totalPages}</p>
                 </div>
                 <div className="flex gap-14 ">
                     <p className="p-2 text-[#328EFF] bg-[#328EFF26] rounded-lg">Category: {category}</p>
                     <p className="p-2 text-[#FFAC33] bg-[#FFAC3326] rounded-lg">Rating: {rating}</p>
-                   <Link to={`/book/${bookId}`}><button className="p-2 bg-[#23BE0A] text-white rounded-lg">View Details </button></Link>
+                    <Link to={`/book/${bookId}`}><button className="p-2 bg-[#23BE0A] text-white rounded-lg">View Details </button></Link>
                 </div>
             </div>
 
@@ -38,4 +34,4 @@ const ReadBook = ({ book }) => {
     );
 };
 
-export default ReadBook;
+export default WishBook;

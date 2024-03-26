@@ -10,11 +10,11 @@ const ListedBook = () => {
                 <h2 className=" font-bold text-3xl ">Books</h2>
             </div>
             <div className=" mt-5 text-center">
-                {/* <select className="select select-bordered bg-[#23BE0A] max-w-xs">
+                <select className="select select-bordered bg-[#23BE0A] max-w-xs">
                     <option disabled selected>Sort By</option>
                     <option>Han Solo</option>
                     <option>Greedo</option>
-                </select> */}
+                </select>
             </div>
 
 

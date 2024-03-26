@@ -9,7 +9,7 @@ const BookDetails = () => {
     const { id } = useParams()
 
     const intId = parseInt(id)
-    console.log(books, id);
+    // console.log(books, id);
 
     const book = books.find(book => book.bookId == intId);
     const { bookId, bookName, author, image, review,
@@ -24,10 +24,11 @@ const BookDetails = () => {
         toast('Wishlist Submit')
     }
 
+
     return (
         <div className="mt-6 md:mt-12 grid md:grid-cols-2  font-work">
             <div className="flex justify-center bg-[#1313130D] rounded-lg mr-6">
-                <img className="p-16 md:w-[80%] md:h-screen" src={image} alt="" />
+                <img className="p-16 md:w-[80%] " src={image} alt="" />
             </div>
             <div className="p-2">
                 <h2 className="mb-5 font-play text-4xl font-bold text-[#131313]">

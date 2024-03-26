@@ -23,17 +23,16 @@ const ReadBooks = () => {
         }
     }, [allbooks, setreadbook])
 
-    console.log(allbooks, readbook)
+    // console.log(allbooks, readbook)
+
+
 
     return (
-        <div>
-            <h2>Readbooks component {readbook.length}</h2>
-            <div>
+            <div className="mb-6 ">
                 {
                     readbook.map(book => <ReadBook key={book.bookId} book={book}></ReadBook>)
                 }
-            </div>
-        </div>
+            </div>   
     );
 };
 
