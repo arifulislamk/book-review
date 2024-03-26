@@ -4,11 +4,14 @@
         "bookName": "The Great Gatsby",
         "author": "F. Scott Fitzgerald",
         "image": "https://i.ibb.co/pjx7qXF/png1.png",
-        "review": "A timeless classic that delves into the complexities of the American Dream, unveiling the dark realities hidden beneath its shimmering facade.",
+        "review": "A timeless classic that delves into the complexities of the American Dream, unveiling the dark realities hidden beneath its shimmering facade. Fitzgerald's prose dances with an elegance that mirrors the opulence of the Jazz Age. The Great Gatsby is a masterful portrayal of longing, desire, and the disillusionment that follows.",
         "totalPages": 180,
         "rating": 4.5,
         "category": "Classic Fiction",
-        "tags": ["Romance", "Drama"],
+        "tags": [
+            "Romance",
+            "Drama"
+        ],
         "publisher": "Scribner",
         "yearOfPublishing": 1925
     },
@@ -17,11 +20,14 @@
         "bookName": "The Last Arts Of Good",
         "author": "George Orwell",
         "image": "https://i.ibb.co/vZY3F7J/png2.png",
-        "review": "A chilling portrayal of a dystopian society where individuality is crushed under the weight of totalitarianism, serving as a stark warning against the dangers of unchecked authority.",
+        "review": "A chilling portrayal of a dystopian society where individuality is crushed under the weight of totalitarianism, serving as a stark warning against the dangers of unchecked authority. Orwell's narrative is a haunting reflection of the potential consequences of political oppression. The Last Arts Of Good stands as a powerful testament to the importance of freedom and the human spirit's resilience.",
         "totalPages": 328,
         "rating": 4.7,
         "category": "Dystopian Fiction",
-        "tags": ["Political",  "Philosophical"],
+        "tags": [
+            "Political",
+            "Philosophical"
+        ],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
     },
@@ -30,11 +36,14 @@
         "bookName": "To Kill a Mockingbird",
         "author": "Harper Lee",
         "image": "https://i.ibb.co/N3Bccd0/png3.png",
-        "review": "A poignant narrative that confronts issues of racial injustice and moral growth in a small Southern town, leaving a lasting impact on readers of all ages.",
+        "review": "A poignant narrative that confronts issues of racial injustice and moral growth in a small Southern town, leaving a lasting impact on readers of all ages. Harper Lee's storytelling is both compassionate and powerful, resonating with the human spirit. To Kill a Mockingbird remains a beacon of hope and a call to action against prejudice and inequality.",
         "totalPages": 336,
         "rating": 4.8,
         "category": "Southern Gothic",
-        "tags": ["Coming-of-age", "Legal Drama"],
+        "tags": [
+            "Coming-of-age",
+            "Legal Drama"
+        ],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
     },
@@ -43,11 +52,14 @@
         "bookName": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "image": "https://i.ibb.co/9c68JwF/png4.png",
-        "review": "A raw and honest portrayal of adolescent angst and alienation, capturing the essence of teenage rebellion in the face of societal expectations.",
+        "review": "A raw and honest portrayal of adolescent angst and alienation, capturing the essence of teenage rebellion in the face of societal expectations. Salinger's protagonist, Holden Caulfield, remains an emblem of youthful disillusionment. The Catcher in the Rye continues to resonate with readers as a timeless exploration of identity and belonging.",
         "totalPages": 224,
         "rating": 4.4,
         "category": "Coming-of-Age Fiction",
-        "tags": ["Young Adult", "Cultural Critique"],
+        "tags": [
+            "Young Adult",
+            "Cultural Critique"
+        ],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
     },
@@ -56,11 +68,14 @@
         "bookName": "Pride and Prejudice",
         "author": "Jane Austen",
         "image": "https://i.ibb.co/YNwqhZJ/png5.png",
-        "review": "A timeless romance that explores themes of class, marriage, and societal expectations with wit, charm, and a keen understanding of human nature.",
+        "review": "A timeless romance that explores themes of class, marriage, and societal expectations with wit, charm, and a keen understanding of human nature. Austen's wit cuts through social pretensions, revealing the intricacies of human relationships. Pride and Prejudice remains a delightful journey through the complexities of love and social conventions.",
         "totalPages": 432,
         "rating": 4.6,
         "category": "Romantic Fiction",
-        "tags": ["Regency Era", "British Literature"],
+        "tags": [
+            "Regency Era",
+            "British Literature"
+        ],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
     },
@@ -69,11 +84,14 @@
         "bookName": "The Hobbit",
         "author": "J.R.R. Tolkien",
         "image": "https://i.ibb.co/PGFzHwQ/png6.png",
-        "review": "An enchanting adventure filled with memorable characters, breathtaking landscapes, and epic quests, capturing the imagination of readers young and old.",
+        "review": "An enchanting adventure filled with memorable characters, breathtaking landscapes, and epic quests, capturing the imagination of readers young and old. Tolkien's world-building is unparalleled, inviting readers to embark on a journey beyond the realms of imagination. The Hobbit stands as a cornerstone of fantasy literature, inspiring generations with its tale of heroism and friendship.",
         "totalPages": 310,
         "rating": 4.9,
         "category": "Fantasy",
-        "tags": ["Adventure", "Quest"],
+        "tags": [
+            "Adventure",
+            "Quest"
+        ],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1937
     },
@@ -82,11 +100,14 @@
         "bookName": "The Catcher in the Rye",
         "author": "J.D. Salinger",
         "image": "https://i.ibb.co/L1FZ2Sq/png7.png",
-        "review": "A raw and honest portrayal of adolescent angst and alienation, capturing the essence of teenage rebellion in the face of societal expectations.",
+        "review": "A raw and honest portrayal of adolescent angst and alienation, capturing the essence of teenage rebellion in the face of societal expectations. Salinger's narrative resonates with authenticity, making it a timeless coming-of-age tale. The Catcher in the Rye continues to hold a mirror to the struggles of adolescence, reminding readers of the universal journey to find oneself.",
         "totalPages": 224,
         "rating": 4.4,
         "category": "Coming-of-Age Fiction",
-        "tags": ["Young Adult", "Cultural Critique"],
+        "tags": [
+            "Young Adult",
+            "Cultural Critique"
+        ],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
     },
@@ -95,11 +116,14 @@
         "bookName": "Pride and Prejudice",
         "author": "Jane Austen",
         "image": "https://i.ibb.co/NKGY83F/png8.png",
-        "review": "A timeless romance that explores themes of class, marriage, and societal expectations with wit, charm, and a keen understanding of human nature.",
+        "review": "A timeless romance that explores themes of class, marriage, and societal expectations with wit, charm, and a keen understanding of human nature. Austen's keen observations of societal norms elevate this novel to a literary masterpiece. Pride and Prejudice continues to enchant readers with its sparkling dialogue and timeless exploration of love and society.",
         "totalPages": 432,
         "rating": 4.6,
         "category": "Romantic Fiction",
-        "tags": ["Regency Era", "British Literature"],
+        "tags": [
+            "Regency Era",
+            "British Literature"
+        ],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
     },
@@ -108,11 +132,15 @@
         "bookName": "The Hobbit",
         "author": "J.R.R. Tolkien",
         "image": "https://i.ibb.co/Y04XY3P/png9.png",
-        "review": "An enchanting adventure filled with memorable characters, breathtaking landscapes, and epic quests, capturing the imagination of readers young and old.",
+        "review": "An enchanting adventure filled with memorable characters, breathtaking landscapes, and epic quests, capturing the imagination of readers young and old. Tolkien's storytelling prowess transports readers to a world of wonder and magic. The Hobbit continues to inspire readers with its timeless tale of courage and the triumph of good over evil.",
         "totalPages": 310,
         "rating": 4.9,
         "category": "Fantasy",
-        "tags": ["Adventure", "High Fantasy", "Quest"],
+        "tags": [
+            "Adventure",
+            "High Fantasy",
+            "Quest"
+        ],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1937
     }
