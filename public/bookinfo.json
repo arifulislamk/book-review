@@ -8,7 +8,7 @@
         "totalPages": 180,
         "rating": 4.5,
         "category": "Classic Fiction",
-        "tags": ["Romance", "Drama", "American Literature"],
+        "tags": ["Romance", "Drama"],
         "publisher": "Scribner",
         "yearOfPublishing": 1925
     },
@@ -21,7 +21,7 @@
         "totalPages": 328,
         "rating": 4.7,
         "category": "Dystopian Fiction",
-        "tags": ["Political", "Social Commentary", "Philosophical"],
+        "tags": ["Political",  "Philosophical"],
         "publisher": "Secker & Warburg",
         "yearOfPublishing": 1949
     },
@@ -34,7 +34,7 @@
         "totalPages": 336,
         "rating": 4.8,
         "category": "Southern Gothic",
-        "tags": ["Coming-of-age", "Legal Drama", "Social Issues"],
+        "tags": ["Coming-of-age", "Legal Drama"],
         "publisher": "J. B. Lippincott & Co.",
         "yearOfPublishing": 1960
     },
@@ -47,7 +47,7 @@
         "totalPages": 224,
         "rating": 4.4,
         "category": "Coming-of-Age Fiction",
-        "tags": ["Young Adult", "Cultural Critique", "Existentialism"],
+        "tags": ["Young Adult", "Cultural Critique"],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
     },
@@ -60,7 +60,7 @@
         "totalPages": 432,
         "rating": 4.6,
         "category": "Romantic Fiction",
-        "tags": ["Regency Era", "Satire", "British Literature"],
+        "tags": ["Regency Era", "British Literature"],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
     },
@@ -73,7 +73,7 @@
         "totalPages": 310,
         "rating": 4.9,
         "category": "Fantasy",
-        "tags": ["Adventure", "High Fantasy", "Quest"],
+        "tags": ["Adventure", "Quest"],
         "publisher": "George Allen & Unwin",
         "yearOfPublishing": 1937
     },
@@ -86,7 +86,7 @@
         "totalPages": 224,
         "rating": 4.4,
         "category": "Coming-of-Age Fiction",
-        "tags": ["Young Adult", "Cultural Critique", "Existentialism"],
+        "tags": ["Young Adult", "Cultural Critique"],
         "publisher": "Little, Brown and Company",
         "yearOfPublishing": 1951
     },
@@ -99,7 +99,7 @@
         "totalPages": 432,
         "rating": 4.6,
         "category": "Romantic Fiction",
-        "tags": ["Regency Era", "Satire", "British Literature"],
+        "tags": ["Regency Era", "British Literature"],
         "publisher": "T. Egerton, Whitehall",
         "yearOfPublishing": 1813
     },
