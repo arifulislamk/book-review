@@ -3,9 +3,17 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
 
     const links = <>
-        <li><NavLink className=" text-[#23BE0A] " to="/">Home</NavLink></li>
-        <li><NavLink className=" text-[#131313CC]" to="/listedBooks" >Listed Books</NavLink> </li>
-        <li><NavLink className=" text-[#131313CC]" to="/pagesToRead">Pages to Read</NavLink> </li>
+        <li><NavLink className={({ isActive }) => isActive ?
+            'font-semibold text-[#23BE0A] border border-[#23BE0A] rounded-md p-2' : ' text-[#131313CC]'}
+            to="/">Home</NavLink></li>
+
+        <li><NavLink className={({ isActive }) => isActive ?
+            'font-semibold text-[#23BE0A] border border-[#23BE0A] rounded-md p-2' : ' text-[#131313CC]'}
+            to="/listedBooks" >Listed Books</NavLink> </li>
+
+        <li><NavLink className={({ isActive }) => isActive ?
+            'font-semibold text-[#23BE0A] border border-[#23BE0A] rounded-md p-2' : ' text-[#131313CC]'}
+            to="/pagesToRead">Pages to Read</NavLink> </li>
     </>
 
     return (
