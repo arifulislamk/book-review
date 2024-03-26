@@ -1,4 +1,8 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { saveBookItem } from "../../Utility/localStorage";
+import { saveBookItem2 } from "../../Utility/localStorage2";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const BookDetails = () => {
     const books = useLoaderData();
@@ -10,6 +14,15 @@ const BookDetails = () => {
     const book = books.find(book => book.bookId == intId);
     const { bookId, bookName, author, image, review,
         totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
+
+    const handleReadtostify = () => {
+        saveBookItem(intId)
+        toast('read Submit')
+    }
+    const handleWishListtostify = () => {
+        saveBookItem2(intId)
+        toast('Wishlist Submit')
+    }
 
     return (
         <div className="mt-6 md:mt-12 grid md:grid-cols-2  font-work">
@@ -38,12 +51,16 @@ const BookDetails = () => {
                     </div>
 
                     <div className="font-semibold">
-                        <button className="px-6 btn border border-gray-500 text-[#131313] mr-2">Read</button>
-                        <button className="btn border text-white bg-[#50B1C9]">Wishlist</button>
+                        <button
+                            onClick={handleReadtostify}
+                            className="px-6 btn border border-gray-500 text-[#131313] mr-2">Read</button>
+                        <button 
+                        onClick={handleWishListtostify}
+                        className="btn border text-white bg-[#50B1C9]">Wishlist</button>
                     </div>
                 </div>
             </div>
-
+            <ToastContainer />
         </div>
     );
 };
