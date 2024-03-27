@@ -3,7 +3,15 @@ import { Link, Outlet } from "react-router-dom";
 
 const ListedBook = () => {
 
-    const [tabIndex, settabIndex] = useState(0)
+    const [tabIndex, settabIndex] = useState(0) ;
+
+    // const [displaybooks, setdisplaybooks] = useState()
+
+    // const handlefilterbutton = text => {
+    //     if(text == 'rating'){
+            
+    //     }
+    // }
     return (
         <div>
             <div className="mt-3 md:mt-6 py-3 md:py-8 bg-[#1313130D] text-center rounded-lg">
@@ -12,15 +20,16 @@ const ListedBook = () => {
             <div className="mt-5 text-center">
                 <select className="select select-bordered bg-[#23BE0A] max-w-xs">
                     <option disabled selected>Sort By</option>
-                    <option>Han Solo</option>
-                    <option>Greedo</option>
+                    <option>Rating</option>
+                    <option>Number of pages</option>
+                    <option>Published year</option>
                 </select>
             </div>
 
 
             <div className="flex  items-center sm:justify-start md:-mx-4 overflow-x-auto overflow-y-hidden  flex-nowrap dark:bg-gray-100 dark:text-gray-800">
                 <Link
-                 to=""
+                    to=""
                     onClick={() => settabIndex(0)}
                     className={`flex items-center flex-shrink-0 px-5 py-3
                 ${tabIndex === 0 ? 'border border-b-0' : 'border-b'} space-x-2 rounded-t-lg dark:border-gray-600 dark:text-gray-900`}>

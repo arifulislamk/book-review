@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { CiLocationOn } from "react-icons/ci";
 import { GoPeople } from "react-icons/go";
 import { GrDocumentText } from "react-icons/gr";
@@ -5,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const ReadBook = ({ book }) => {
 
-    const { bookId, bookName, author, image, review,
+    const { bookId, bookName, author, image,
         totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
 
 
@@ -37,5 +38,9 @@ const ReadBook = ({ book }) => {
         </div>
     );
 };
+
+ReadBook.propTypes = {
+    book: PropTypes.object,
+}
 
 export default ReadBook;

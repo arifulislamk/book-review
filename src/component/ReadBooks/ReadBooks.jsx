@@ -7,7 +7,20 @@ import ReadBook from "../ReadBook/ReadBook";
 const ReadBooks = () => {
     const allbooks = useLoaderData();
 
-    const [readbook, setreadbook] = useState([])
+    const [readbook, setreadbook] = useState([]) ;
+
+    // const [displaybook, setdisplaybook] = useState([])
+
+    // const handlefilter = text => {
+    //     if(text == 'rating'){
+    //         const ratingsdata = [] ;
+    //         readbook.forEach( book => ratingsdata.push(book.rating)) ;
+    //         console.log(ratingsdata) ;
+    //         const sortedrating = ratingsdata.sort(function(a, b){return a - b});
+    //         console.log(sortedrating) ;
+    //         sortedrating.find(rat => rat == readbook.rating)
+    //     }
+    // }
 
     useEffect(() => {
         const booksId = getStoredBooks();
@@ -29,6 +42,7 @@ const ReadBooks = () => {
 
     return (
             <div className="mb-6 ">
+                {/* <button onClick={() => handlefilter('rating')}>click</button> */}
                 {
                     readbook.map(book => <ReadBook key={book.bookId} book={book}></ReadBook>)
                 }

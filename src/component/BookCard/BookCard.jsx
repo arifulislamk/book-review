@@ -1,9 +1,9 @@
+import PropTypes from "prop-types"
 import { CiStar } from "react-icons/ci";
 import { Link } from "react-router-dom";
 const BookCard = ({ book }) => {
 
-    const { bookId, bookName, author, image, review,
-        totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
+    const { bookId, bookName, author, image, rating, category, tags } = book;
     return (
         <Link to={`/book/${bookId}`}>
             <div className="p-6 card bg-base-100 border-2 border-gray-400 rounded-2xl shadow-xl">
@@ -25,5 +25,8 @@ const BookCard = ({ book }) => {
         </Link>
     );
 };
+BookCard.propTypes = {
+    book: PropTypes.object,
+}
 
 export default BookCard;

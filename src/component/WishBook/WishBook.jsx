@@ -1,11 +1,14 @@
+import PropTypes from "prop-types"
 import { CiLocationOn } from "react-icons/ci";
 import { GoPeople } from "react-icons/go";
 import { GrDocumentText } from "react-icons/gr";
 import { Link } from "react-router-dom";
 
 const WishBook = ({ book }) => {
-    const { bookId, bookName, author, image, review,
+    const { bookId, bookName, author, image,
         totalPages, rating, category, tags, publisher, yearOfPublishing } = book;
+
+
     return (
         <div className="p-6 mb-6 gap-2 grid grid-cols-1 md:grid-cols-4 border border-gray-400 rounded-lg font-work">
             <div className="flex justify-center bg-[#13131326] rounded-xl mr-5">
@@ -28,10 +31,12 @@ const WishBook = ({ book }) => {
                     <Link to={`/book/${bookId}`}><button className="p-2 bg-[#23BE0A] text-white rounded-lg">View Details </button></Link>
                 </div>
             </div>
-
-
         </div>
     );
 };
+
+WishBook.propTypes = {
+    book: PropTypes.object,
+}
 
 export default WishBook;

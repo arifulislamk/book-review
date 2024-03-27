@@ -1,5 +1,5 @@
 const Writer = ({ writer }) => {
-    const { id, name, writerinformation, imageurl, bookname, country } = writer;
+    const { name, writerinformation, imageurl, bookname, country } = writer;
     return (
         <div className=" p-2 md:p-6 space-y-6 bg-[#1313130D]  rounded-2xl">
             <div className="flex justify-center items-center"><img className="w-1/2 md:h-80 border rounded-lg" src={imageurl} alt="" /></div>

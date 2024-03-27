@@ -2,9 +2,10 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
 import { getStoredBooks } from '../../Utility/localStorage';
 import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
+
+
 const PageToRead = () => {
     const allbook = useLoaderData();
-
     const [readbook, setreadbook] = useState([])
     useEffect(() => {
         const storedbookId = getStoredBooks();
@@ -36,9 +37,8 @@ const PageToRead = () => {
     };
 
 
-
     return (
-        <div>
+        <div style={{ width: '100%', height: 300 }}>
             <BarChart
                 width={1200}
                 height={500}
