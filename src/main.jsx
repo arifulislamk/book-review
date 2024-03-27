@@ -14,6 +14,7 @@ import ReadBooks from './component/ReadBooks/ReadBooks';
 import WishList from './component/WishList/WishList';
 import ErrorPage from './component/ErrorPage/ErrorPage';
 import PopularWriters from './component/PopularWriters/PopularWriters';
+import PopularBooks from './component/PopularBooks/PopularBooks';
 
 const router = createBrowserRouter([
   {
@@ -58,7 +59,8 @@ const router = createBrowserRouter([
       },
       {
         path: "/popularBooks",
-        element: <div>bools</div>
+        element: <PopularBooks></PopularBooks>,
+        loader: () => fetch('/popular.json')
       }
     ]
   },

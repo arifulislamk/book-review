@@ -6,10 +6,10 @@ const ListedBook = () => {
     const [tabIndex, settabIndex] = useState(0)
     return (
         <div>
-            <div className="mt-6 py-8 bg-[#1313130D] text-center rounded-lg">
+            <div className="mt-3 md:mt-6 py-3 md:py-8 bg-[#1313130D] text-center rounded-lg">
                 <h2 className=" font-bold text-3xl ">Books</h2>
             </div>
-            <div className=" mt-5 text-center">
+            <div className="mt-5 text-center">
                 <select className="select select-bordered bg-[#23BE0A] max-w-xs">
                     <option disabled selected>Sort By</option>
                     <option>Han Solo</option>
@@ -18,7 +18,7 @@ const ListedBook = () => {
             </div>
 
 
-            <div className="flex items-center sm:justify-start -mx-4 overflow-x-auto overflow-y-hidden  flex-nowrap dark:bg-gray-100 dark:text-gray-800">
+            <div className="flex  items-center sm:justify-start md:-mx-4 overflow-x-auto overflow-y-hidden  flex-nowrap dark:bg-gray-100 dark:text-gray-800">
                 <Link
                  to=""
                     onClick={() => settabIndex(0)}
