@@ -5,6 +5,8 @@ const ListedBook = () => {
 
     const [tabIndex, settabIndex] = useState(0) ;
 
+    const [ filterBy, setFilterBy] = useState("")
+
     // const [displaybooks, setdisplaybooks] = useState()
 
     // const handlefilterbutton = text => {
@@ -18,11 +20,13 @@ const ListedBook = () => {
                 <h2 className=" font-bold text-3xl ">Books</h2>
             </div>
             <div className="mt-5 text-center">
-                <select className="select select-bordered bg-[#23BE0A] max-w-xs">
+                <select onChange={(e) => {
+                    setFilterBy(e.target.value);
+                }} className="select select-bordered bg-[#23BE0A] max-w-xs">
                     <option disabled selected>Sort By</option>
-                    <option>Rating</option>
-                    <option>Number of pages</option>
-                    <option>Published year</option>
+                    <option value={"rating"}>Rating</option>
+                    <option value={"page"}>Number of pages</option>
+                    <option value={"year"}>Published year</option>
                 </select>
             </div>
 
@@ -50,7 +54,7 @@ const ListedBook = () => {
                     <span>Wishlist Books</span>
                 </Link>
             </div>
-            <Outlet></Outlet>
+            <Outlet context={{filterBy}}></Outlet>
 
         </div>
     );

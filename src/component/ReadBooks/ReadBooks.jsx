@@ -1,26 +1,19 @@
-import { useLoaderData } from "react-router-dom";
+import { useLoaderData, useOutletContext } from "react-router-dom";
 import { getStoredBooks } from "../../Utility/localStorage";
 import { useEffect, useState } from "react";
 import ReadBook from "../ReadBook/ReadBook";
 
 
+
 const ReadBooks = () => {
+    const { filterBy } = useOutletContext();
     const allbooks = useLoaderData();
 
-    const [readbook, setreadbook] = useState([]) ;
+    const [readbook, setreadbook] = useState([]);
 
-    // const [displaybook, setdisplaybook] = useState([])
+    const [filterdData, setFilterdData] = useState(readbook);
 
-    // const handlefilter = text => {
-    //     if(text == 'rating'){
-    //         const ratingsdata = [] ;
-    //         readbook.forEach( book => ratingsdata.push(book.rating)) ;
-    //         console.log(ratingsdata) ;
-    //         const sortedrating = ratingsdata.sort(function(a, b){return a - b});
-    //         console.log(sortedrating) ;
-    //         sortedrating.find(rat => rat == readbook.rating)
-    //     }
-    // }
+
 
     useEffect(() => {
         const booksId = getStoredBooks();
@@ -34,19 +27,39 @@ const ReadBooks = () => {
             }
             setreadbook(readbooks)
         }
-    }, [allbooks, setreadbook])
+    }, [allbooks])
 
-    // console.log(allbooks, readbook)
+    useEffect(() => {
+        if (filterBy == "rating") {
+            const data = readbook.sort(function (a, b) {
+                return b.rating - a.rating
+            });
+            setFilterdData(data)
+        } else if (filterBy == "year") {
+            const data = readbook.sort(function (a, b) {
+                return b.yearOfPublishing - a.yearOfPublishing;
+            })
+            setFilterdData(data);
+        } else if (filterBy == "page") {
+            const data = readbook.sort(function (a, b) {
+                return b.totalPages - a.totalPages;
+            })
+            setFilterdData(data);
+        } else {
+            setFilterdData(readbook);
+        }
+    }, [filterBy, readbook])
+
+    console.log({ filterdData, readbook })
 
 
 
     return (
-            <div className="mb-6 ">
-                {/* <button onClick={() => handlefilter('rating')}>click</button> */}
-                {
-                    readbook.map(book => <ReadBook key={book.bookId} book={book}></ReadBook>)
-                }
-            </div>   
+        <div className="mb-6 ">
+            {
+                filterdData.map(book => <ReadBook key={book.bookId} book={book}></ReadBook>)
+            }
+        </div>
     );
 };
 
