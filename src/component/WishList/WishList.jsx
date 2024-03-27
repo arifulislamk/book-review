@@ -29,17 +29,17 @@ const WishList = () => {
 
     useEffect(() => {
         if(filterBy == "rating") {
-            const data = wishlistbook.sort(function(a, b){
+            const data = [...wishlistbook].sort(function(a, b){
                 return b.rating-a.rating
             });
             setFilterdData(data)
         } else if(filterBy == "year") {
-            const data = wishlistbook.sort(function(a, b) {
+            const data = [...wishlistbook].sort(function(a, b) {
                 return b.yearOfPublishing - a.yearOfPublishing;
             })
             setFilterdData(data);
         } else if( filterBy == "page") {
-            const data = wishlistbook.sort(function(a, b) {
+            const data = [...wishlistbook].sort(function(a, b) {
                 return b.totalPages - a.totalPages;
             })
             setFilterdData(data);

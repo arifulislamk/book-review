@@ -31,17 +31,17 @@ const ReadBooks = () => {
 
     useEffect(() => {
         if (filterBy == "rating") {
-            const data = readbook.sort(function (a, b) {
+            const data = [...readbook].sort(function (a, b) {
                 return b.rating - a.rating
             });
             setFilterdData(data)
         } else if (filterBy == "year") {
-            const data = readbook.sort(function (a, b) {
+            const data = [...readbook].sort(function (a, b) {
                 return b.yearOfPublishing - a.yearOfPublishing;
             })
             setFilterdData(data);
         } else if (filterBy == "page") {
-            const data = readbook.sort(function (a, b) {
+            const data = [...readbook].sort(function (a, b) {
                 return b.totalPages - a.totalPages;
             })
             setFilterdData(data);

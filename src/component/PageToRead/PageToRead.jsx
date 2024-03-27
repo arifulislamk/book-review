@@ -1,4 +1,4 @@
-import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid } from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, ResponsiveContainer } from 'recharts';
 import { getStoredBooks } from '../../Utility/localStorage';
 import { useEffect, useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
@@ -39,26 +39,28 @@ const PageToRead = () => {
 
     return (
         <div style={{ width: '100%', height: 300 }}>
-            <BarChart
-                width={1200}
-                height={500}
-                data={readbook}
-                margin={{
-                    top: 20,
-                    right: 30,
-                    left: 20,
-                    bottom: 5,
-                }}
-            >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="bookName" />
-                <YAxis />
-                <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
-                    {readbook.map((entry, index) => (
-                        <Cell key={`cell-${index}`} fill={colors[index % 20]} />
-                    ))}
-                </Bar>
-            </BarChart>
+            <ResponsiveContainer width="100%" height="100%">
+                <BarChart
+                    width={1200}
+                    height={500}
+                    data={readbook}
+                    margin={{
+                        top: 20,
+                        right: 30,
+                        left: 20,
+                        bottom: 5,
+                    }}
+                >
+                    <CartesianGrid strokeDasharray="3 3" />
+                    <XAxis dataKey="bookName" />
+                    <YAxis />
+                    <Bar dataKey="totalPages" fill="#8884d8" shape={<TriangleBar />} label={{ position: 'top' }}>
+                        {readbook.map((entry, index) => (
+                            <Cell key={`cell-${index}`} fill={colors[index % 20]} />
+                        ))}
+                    </Bar>
+                </BarChart>
+            </ResponsiveContainer>
 
         </div>
     );
