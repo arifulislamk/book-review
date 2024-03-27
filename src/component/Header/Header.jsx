@@ -14,6 +14,13 @@ const Header = () => {
         <li><NavLink className={({ isActive }) => isActive ?
             'font-semibold text-[#23BE0A] border border-[#23BE0A] rounded-md p-2' : ' text-[#131313CC]'}
             to="/pagesToRead">Pages to Read</NavLink> </li>
+
+        <li><NavLink className={({ isActive }) => isActive ?
+            'font-semibold text-[#23BE0A] border border-[#23BE0A] rounded-md p-2' : ' text-[#131313CC]'}
+            to="/popularWriter">Writers</NavLink> </li>
+        <li><NavLink className={({ isActive }) => isActive ?
+            'font-semibold text-[#23BE0A] border border-[#23BE0A] rounded-md p-2' : ' text-[#131313CC]'}
+            to="/popularBooks"> Popular Books</NavLink> </li>
     </>
 
     return (

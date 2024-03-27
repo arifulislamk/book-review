@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "name": "J.K. Rowling",
+        "writerinformation": "J.K. Rowling, born as Joanne Rowling, is a British author best known for her immensely popular Harry Potter series. Rowling's journey to success is inspiring; she faced numerous rejections before finding a publisher for her first Harry Potter novel, which went on to become a global phenomenon. Her captivating storytelling, imaginative world-building, and relatable characters have captured the hearts of millions of readers worldwide, making her one of the most beloved and successful authors of all time.",
+        "imageurl": "https://i.ibb.co/Tr4Xz5f/j-k-rowling.jpg",
+        "bookname": "Harry Potter series",
+        "country": "United Kingdom"
+    },
+    {
+        "id": 2,
+        "name": "Stephen King",
+        "writerinformation": "Stephen King, an American author, is renowned for his mastery of horror, suspense, and supernatural fiction. With over 60 novels and countless short stories to his name, King has profoundly influenced contemporary horror literature and popular culture. His ability to delve into the darkest corners of the human psyche while crafting compelling narratives has earned him a dedicated global following. From 'Carrie' to 'The Shining' and beyond, King's works continue to captivate and terrify readers around the world.",
+        "imageurl": "https://i.ibb.co/QJZKXJv/stepen-king.jpg",
+        "bookname": "Various, including 'The Shining' and 'It'",
+        "country": "United States"
+    },
+    {
+        "id": 3,
+        "name": "J.R.R. Tolkien",
+        "writerinformation": "J.R.R. Tolkien, a British writer, is celebrated for his iconic high-fantasy works, notably 'The Hobbit' and 'The Lord of the Rings' trilogy. His intricate world-building, rich mythology, and complex characters have left an indelible mark on the fantasy genre and inspired generations of writers and readers alike. Tolkien's profound imagination and linguistic expertise shine through his works, transporting readers to enchanting realms filled with adventure, heroism, and timeless wisdom.",
+        "imageurl": "https://i.ibb.co/dKZ3xMC/J-R-R-Tolkien-ca-1925.jpg",
+        "bookname": "The Hobbit, The Lord of the Rings series",
+        "country": "United Kingdom"
+    },
+    {
+        "id": 4,
+        "name": "Muhammad Zafar Iqbal",
+        "writerinformation": "Muhammad Zafar Iqbal is a Bangladeshi author, physicist, and academician known for his contributions to children's literature and science fiction. His engaging storytelling and imaginative narratives have made him a beloved figure among readers of all ages in Bangladesh and beyond. Iqbal's works often explore themes of science, technology, and societal issues, captivating audiences with their thought-provoking content and accessible style.",
+        "imageurl": "https://i.ibb.co/7JThCRK/Zafar-Iqbal-Syed-Zakir-Hossain0350-2.jpg",
+        "bookname": "Various, including 'Amar Bondhu Rashed' and 'Gabbu'",
+        "country": "Bangladesh"
+    },
+    {
+        "id": 5,
+        "name": "Humayun Ahmed",
+        "writerinformation": "Humayun Ahmed was a Bangladeshi novelist, dramatist, and filmmaker celebrated for his versatile contributions to Bengali literature and culture. His works encompass a wide range of genres, including romantic comedies, social dramas, and psychological thrillers, earning him immense popularity and critical acclaim. Ahmed's ability to depict the complexities of human relationships with warmth, humor, and insight has endeared him to generations of readers and viewers.",
+        "imageurl": "https://i.ibb.co/C13S7P2/humayon-ahmed.jpg",
+        "bookname": "Various, including 'Shonkhonil Karagar' and 'Aaj Himur Biye'",
+        "country": "Bangladesh"
+    }
+]

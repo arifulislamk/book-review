@@ -19,11 +19,11 @@ const BookDetails = () => {
         const readId = getStoredBooks();
         const findread = readId.find(read => read == intId)
         if (findread) {
-            toast('Already Readed')
+            toast.warning('🦄 Already Read!')
         }
         else {
             saveBookItem(intId)
-            toast('Books Readed Done!')
+            toast.success('Books Readed Done!')
         }
 
     }
@@ -34,14 +34,14 @@ const BookDetails = () => {
         const findwish = wishid.find(wish => wish == intId)
         const findread = readid.find(read => read == intId)
         if (findwish) {
-            toast('Already exist Wishlist')
+            toast.warning('🦄 Already exist Wishlist!');
         }
         else if (findread) {
-            toast('Readed Book. Not Added WishList')
+            toast.warning('🦄 Not Added WishList. Readed Book')
         }
         else {
             saveBookItem2(intId)
-            toast('Added to WishList')
+            toast.success('Added to WishList')
         }
 
     }
