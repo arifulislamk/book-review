@@ -10,7 +10,6 @@ const ErrorPage = () => {
 
                 <Link to="/"><button className="btn ">Go Back Home</button></Link>
             </div>
-
     
     );
 };

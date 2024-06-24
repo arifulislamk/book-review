@@ -25,7 +25,6 @@ const BookDetails = () => {
             saveBookItem(intId)
             toast.success('Books Readed Done!')
         }
-
     }
 
     const handleWishListtostify = () => {
